@@ -15,7 +15,7 @@ module.exports = function(app) {
     app.post('/login', function(req, res, next) {
     	 res.render('coachLandng');
 
-    })
+    })  
 
 
 }
