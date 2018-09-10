@@ -49,9 +49,9 @@ app.middleware('parse', bodyParser.urlencoded({
 
 app.middleware('session:before', cookieParser(app.get('cookieSecret')));
 
-const maxAge = parseInt(process.env.npm_package_config_session_ttl);
+const maxAge = 14400000;
 app.middleware('session', session({
-  secret: process.env.npm_package_config_session_secret,
+  secret: 'kitty'
   saveUninitialized: true,
   resave: true,
   // cookie expires in two hours.
