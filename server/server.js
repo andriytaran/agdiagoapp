@@ -51,7 +51,7 @@ app.middleware('session:before', cookieParser(app.get('cookieSecret')));
 
 const maxAge = 14400000;
 app.middleware('session', session({
-  secret: 'kitty'
+  secret: 'kitty',
   saveUninitialized: true,
   resave: true,
   // cookie expires in two hours.
