@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>AgDiago | Sports Analytics</title>
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+  <meta name="description" content="">
+
+  <!-- CSS -->
+  <link href="assets/css/preload.css" rel="stylesheet">
+
+  <!-- Compiled in vendors.js -->
+  <!--
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/slidebars.min.css" rel="stylesheet">
+    <link href="assets/css/lightbox.css" rel="stylesheet">
+    <link href="assets/css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="assets/css/buttons.css" rel="stylesheet">
+    -->
+
+  <link href="assets/css/vendors.css" rel="stylesheet">
+  <link href="assets/css/syntaxhighlighter/shCore.css" rel="stylesheet">
+
+  <!-- RS5.0 Stylesheet -->
+  <!--<link rel="stylesheet" type="text/css" href="assets/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navigation.css">-->
+
+  <link href="assets/css/style-blue.css" rel="stylesheet" title="default">
+  <link href="assets/css/width-full.css" rel="stylesheet" title="default">
+  <link href="assets/css/custom.css" rel="stylesheet" title="default">
+
+
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+<body>
+
+  <div class="sb-site-container">
+    <div class="boxed">
+
+      <header id="header-full-top" class="hidden-xs header-full">
+        <div class="container">
+
+        </div> <!-- container -->
+      </header> <!-- header-full -->
+      <nav class="navbar navbar-default navbar-header-full navbar-dark yamm navbar-static-top" role="navigation" id="header">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-bars"></i>
+            </button>
+            <a id="ar-brand" class="navbar-brand hidden-lg hidden-md hidden-sm" href="index.html">Agdiago <span> </span></a>
+          </div> <!-- navbar-header -->
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Team</a>
+                <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
+                  <li><a href="/profile/Mike-Taylor">Mike Taylor</a></li>
+                  <li><a href="/profile/Al-Mckellar">Al McKellar</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Partners</a>
+                <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
+                  <li><a href="index.html">Fitbit</a></li>
+                  <li><a href="index_old.html">Gallup</a></li>
+                  <li><a href="index_old.html">Wilson</a></li>
+                  <li><a href="index_old.html">Football Scoop</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Advisory Board</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Our Work</a>
+                <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
+                  <li><a href="index.html">Assessment</a></li>
+                  <li><a href="index.html">Platform</a></li>
+                  <li><a href="index.html">Cultural Fit</a></li>
+                  <li><a href="index.html">Branding</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html">Contact</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Help</a>
+                <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
+                  <li><a href="page_faq.html">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="dropdown coaches">
+                <a href="javascript:void(0);" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle button button-raised button-primary button-pill">For Coaches</a>
+                <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
+                  <li>
+                    <a href="#" class="login dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Login</a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-login-box animated flipCenter">
+                      <form role="form">
+                        <h4>Login Form</h4>
+                        <div class="form-group">
+                          <div class="input-group login-input">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Username">
+                          </div>
+                          <br>
+                          <div class="input-group login-input">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password">
+                          </div>
+                          <div class="checkbox pull-left">
+                            <input type="checkbox" id="checkbox_remember1">
+                            <label for="checkbox_remember1">
+                              Remember me
+                            </label>
+                          </div>
+                          <button type="submit" class="btn btn-ar btn-primary pull-right">Login</button>
+                          <div class="clearfix"></div>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li><a href="e-commerce.html">Cultural Fit</a></li>
+                  <li><a href="e-commerce_product.html">Branding</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- navbar-collapse -->
+        </div><!-- container -->
+      </nav>
+
+      <%- body %>
+
+      <section class="wrap-dark-color">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 feature-container">
+              <a class="feature-icon">
+                <i class="fa fa-desktop"></i>
+                <h4>Retina</h4>
+              </a>
+              <a class="feature-icon">
+                <i class="fa fa-download"></i>
+                <h4>Downloads</h4>
+              </a>
+              <a class="feature-icon">
+                <i class="fa fa-cloud"></i>
+                <h4>Cloud</h4>
+              </a>
+              <a class="feature-icon">
+                <i class="fa fa-html5"></i>
+                <h4>HTML 5</h4>
+              </a>
+            </div>
+            <div class="col-md-5 hidden-sm hidden-xs">
+              <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit
+                amet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div> <!-- boxed -->
+  </div> <!-- sb-site -->
+
+
+  <!-- Scripts -->
+  <!-- Compiled in vendors.js -->
+  <!--
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.cookie.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-switch.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/slidebars.min.js"></script>
+<script src="assets/js/jquery.bxslider.min.js"></script>
+<script src="assets/js/holder.js"></script>
+<script src="assets/js/buttons.js"></script>
+<script src="assets/js/jquery.mixitup.min.js"></script>
+<script src="assets/js/circles.min.js"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+-->
+
+  <script src="assets/js/vendors.js"></script>
+
+  <!--<script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+<script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>-->
+
+
+  <!-- Syntaxhighlighter -->
+  <script src="assets/js/syntaxhighlighter/shCore.js"></script>
+  <script src="assets/js/syntaxhighlighter/shBrushXml.js"></script>
+  <script src="assets/js/syntaxhighlighter/shBrushJScript.js"></script>
+
+  <script src="assets/js/DropdownHover.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/holder.js"></script>
+  <!--script src="assets/js/portfolio.js"></script-->
+  <!--script src="assets/js/home_full.js"></script-->
+
+</body>
+
+</html>
