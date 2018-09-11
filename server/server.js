@@ -1,16 +1,15 @@
 'use strict';
 
-var loopback = require('loopback');
-var boot = require('loopback-boot');
-var app = module.exports = loopback();
+const loopback = require('loopback');
+const boot = require('loopback-boot');
+const app = module.exports = loopback();
 
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
-var path = require('path');
-var helmet = require('helmet');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const path = require('path');
+const helmet = require('helmet');
 
-
-var cors = require('cors')
+const cors = require('cors');
 
 app.use(cors());
 
@@ -20,14 +19,14 @@ app.use(cors());
  *   object accessible through `req.body`
  *
  */
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
 // configure body parser
-var engine = require('ejs-locals');
+const engine = require('ejs-locals');
 
 app.use(loopback.token());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(loopback.static(require('path').join(__dirname, '..', 'client')));
 // configure view handler
@@ -55,17 +54,17 @@ app.middleware('session', session({
   saveUninitialized: true,
   resave: true,
   // cookie expires in two hours.
-  cookie: {maxAge}
+  cookie: {maxAge},
 }));
 
-app.start = function() {
+app.start = () => {
   // start the web server
-  return app.listen(function() {
+  return app.listen(() => {
     app.emit('started');
-    var baseUrl = app.get('url').replace(/\/$/, '');
+    const baseUrl = app.get('url').replace(/\/$/, '');
     console.log('Web server listening at: %s', baseUrl);
     if (app.get('loopback-component-explorer')) {
-      var explorerPath = app.get('loopback-component-explorer').mountPath;
+      const explorerPath = app.get('loopback-component-explorer').mountPath;
       console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
     }
   });
@@ -73,7 +72,7 @@ app.start = function() {
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
-boot(app, __dirname, function(err) {
+boot(app, __dirname, (err) => {
   if (err) throw err;
 
   // start the server if `$ node server.js`
