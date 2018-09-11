@@ -1,0 +1,22 @@
+.coaches .dropdown-toggle.button-raised {
+  margin: 5px 0 0 !important;
+  padding-top: 10px !important;
+}
+
+.coaches .dropdown-toggle.button-raised::after {
+  top: 13px;
+}
+
+nav .open>a.login {
+  background-color: #0099da !important;
+}
+
+.navbar-default .navbar-collapse {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    float: none;
+  }
+}
