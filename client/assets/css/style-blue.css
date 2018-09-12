@@ -5254,6 +5254,7 @@ a.feature-icon:hover {
   padding-top: 70px;
   margin-bottom: 20px;
   text-align: center;
+  line-height: 1.25em;
 }
 .title-logo span {
   color: #0099da;
