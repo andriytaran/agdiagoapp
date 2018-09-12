@@ -59,11 +59,11 @@
       <header id="header-full-top" class="hidden-xs header-full">
         <div class="container">
           <div class="header-logo-img">
-            <img src="/assets/img/colors/blue/logo51.png" />
+            <a href="/"><img src="/assets/img/colors/blue/logo51.png" /></a>
           </div>
           <div class="header-full-title">
             <div class="clearfix"></div>
-            <h1 class="animated fadeInRight"><a href="index.html"></a></h1><br>
+            <h1 class="animated fadeInRight"></h1><br>
           </div>
           <nav class="top-nav">
             <ul class="top-nav-social hidden-sm">
@@ -152,7 +152,7 @@
                   <li><a href="#">Assessment</a></li>
                   <li><a href="#">Platform</a></li>
                   <li><a href="#">Cultural Fit</a></li>
-                  <li><a href="#">Branding</a></li>
+                  <li><a href="/branding">Branding</a></li>
                 </ul>
               </li>
               <li><a href="/contact">Contact</a></li>
@@ -162,75 +162,52 @@
                   <li><a href="/faq">FAQ</a></li>
                 </ul>
               </li>
-              <li class="dropdown coaches">
-                <a href="javascript:void(0);" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle button button-raised button-primary button-pill">For Coaches</a>
-                <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
-                  <li>
-                    <a href="#" class="login dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Login</a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-login-box animated flipCenter">
-                      <form role="form">
-                        <h4>Login Form</h4>
-                        <div class="form-group">
-                          <div class="input-group login-input">
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Username">
-                          </div>
-                          <br>
-                          <div class="input-group login-input">
-                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                            <input type="password" class="form-control" placeholder="Password">
-                          </div>
-                          <div class="checkbox pull-left">
-                            <input type="checkbox" id="checkbox_remember1">
-                            <label for="checkbox_remember1">
-                              Remember me
-                            </label>
-                          </div>
-                          <button type="submit" class="btn btn-ar btn-primary pull-right">Login</button>
-                          <div class="clearfix"></div>
-                        </div>
-                      </form>
-                    </div>
-                  </li>
-                  <li><a href="#">Cultural Fit</a></li>
-                  <li><a href="#">Branding</a></li>
-                </ul>
+              <li class="coaches">
+                <a href="#" data-toggle="modal" data-target="#myModal" class="dropdown-toggle button button-raised button-primary button-pill">Coaches Login</a>
               </li>
             </ul>
           </div><!-- navbar-collapse -->
         </div><!-- container -->
       </nav>
 
-      <%- body %>
-
-      <section class="wrap-dark-color">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 feature-container">
-              <a class="feature-icon">
-                <i class="fa fa-desktop"></i>
-                <h4>Retina</h4>
-              </a>
-              <a class="feature-icon">
-                <i class="fa fa-download"></i>
-                <h4>Downloads</h4>
-              </a>
-              <a class="feature-icon">
-                <i class="fa fa-cloud"></i>
-                <h4>Cloud</h4>
-              </a>
-              <a class="feature-icon">
-                <i class="fa fa-html5"></i>
-                <h4>HTML 5</h4>
-              </a>
-            </div>
-            <div class="col-md-5 hidden-sm hidden-xs">
-              <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit
-                amet.</p>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="center-block logig-form">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Login Form</div>
+              <div class="panel-body">
+                <form role="form">
+                  <div class="form-group">
+                    <div class="input-group login-input">
+                      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <br>
+                    <div class="input-group login-input">
+                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                      <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="checkbox_remember">
+                      <label for="checkbox_remember">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-ar btn-primary pull-right">Login</button>
+                    <a href="#" class="social-icon-ar sm twitter animated fadeInDown animation-delay-2"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="social-icon-ar sm google-plus animated fadeInDown animation-delay-3"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="social-icon-ar sm facebook animated fadeInDown animation-delay-4"><i class="fa fa-facebook"></i></a>
+                    <hr class="dotted margin-10">
+                    <a href="#" class="btn btn-ar btn-success pull-right">Create Account</a>
+                    <a href="#" class="btn btn-ar btn-warning">Password Recovery</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <%- body %>
 
     </div> <!-- boxed -->
   </div> <!-- sb-site -->
