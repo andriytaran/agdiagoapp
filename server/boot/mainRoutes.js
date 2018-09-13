@@ -5,17 +5,24 @@ const os = require('os');
 const fs = require('fs');
 
 module.exports = (app) => {
-    //GET
+    // Home
     app.get('/', (req, res, next) => {
         res.render('home');
     });
-    app.get('/page_product', (req, res, next) => {
-        res.render('pages/products/page_product');
+
+    // Cultural Fit
+    app.get('/cultural_fit', (req, res, next) => {
+        res.render('pages/cultural_fit');
     });
 
-    //POST
+    // Player Assessment
+    app.get('/player_assessment', (req, res, next) => {
+        res.render('pages/player_assessment');
+    });
+
+    // Login
     app.post('/login', (req, res, next) => {
         res.render('coachLandng');
     });
-  
+
 }
