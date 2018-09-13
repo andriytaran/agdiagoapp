@@ -70,10 +70,10 @@ nav .open>a.login {
   height: 95vh;
 }
 
-.wrap-primary .container {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+.wrap-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-default .navbar-brand {
@@ -126,6 +126,16 @@ nav .open>a.login {
 
 .team-body .panel-heading {
   font-size: 1.6em;
+}
+
+section .faq-description {
+  font-size: 1.4em;
+}
+
+@media (min-height: 990px) {
+  .wrap-primary {
+    padding: 0 0 40px 0;
+  }
 }
 
 @media (min-width: 768px) {
