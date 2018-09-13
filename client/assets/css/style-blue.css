@@ -3245,7 +3245,7 @@ a.thumbnail.active {
 }
 @media (max-width: 400px) {
   .navbar-default .navbar-brand {
-    background: none !important;
+    /*background: none !important;*/
     padding-left: 0;
   }
 }
