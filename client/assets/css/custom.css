@@ -86,10 +86,19 @@ nav .open>a.login {
   padding: 30px 5px;
 }
 
+.branding-body .branding-description {
+  margin-bottom: 30%;
+}
+
+.branding-body .branding-button {
+  display: flex;
+  justify-content: center;
+}
+
 .branding-body .button-brand {
   background-color: #0099da;
   color: #fff;
-  margin: 10vw 15vw 10px 15vw;
+  margin: 10px;
 }
 
 .branding-body p {
