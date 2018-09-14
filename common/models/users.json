@@ -1,12 +1,31 @@
 {
-  "name": "Note",
+  "name": "users",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
   "properties": {
-    "title": {
+    "id": {
+      "type": "number",
+      "id": 1,
+      "required": true
+    },
+    "name": {
       "type": "string",
       "required": true
     },
-    "content": {
-      "type": "string"
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "created_at": {
+      "type": "date",
+      "required": true
     }
   },
   "validations": [],

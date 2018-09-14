@@ -1,26 +1,37 @@
 {
-    "name": "Coach",
-    "properties": {
-        "fname": {
-            "type": "string"
-        },
-        "mname": {
-            "type": "string"
-        },
-        "fname": {
-            "type": "string"
-        },
-        "lname": {
-            "type": "string"
-        },
-        "schoolID": {
-            "type": "string"
-        },
-        "fname": {
-            "type": "string"
-        },
-        "coachTitle": {
-            "type": "string"
-        }
+  "name": "Coach",
+  "properties": {
+    "fname": {
+      "type": "string"
+    },
+    "mname": {
+      "type": "string"
+    },
+    "lname": {
+      "type": "string"
+    },
+    "schoolID": {
+      "type": "string"
+    },
+    "coachTitle": {
+      "type": "string"
     }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
 }

@@ -1,6 +1,11 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
+  "mysql": {
+    "host": "localhost",
+    "url": "mysql://agdiagoapp:agdiagoapp@localhost/agdiagoapp",
+    "database": "agdiagoapp",
+    "password": "agdiagoapp",
+    "name": "mysql",
+    "user": "agdiagoapp",
+    "connector": "mysql"
   }
 }

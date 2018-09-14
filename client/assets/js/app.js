@@ -110,3 +110,21 @@ $('.col-megamenu').matchHeight({
         }
     });
 });*/
+
+function login(e) {
+    const username = $('#username').val();
+    const password = $('#password').val();
+    $.post('/api/Users/login', {
+        username: username,
+        password: password
+    }, function(response) {
+        if (response.id) {
+            alert('Logged in: ' + response.id);
+            localStorage.setItem('token', response.id);
+        }
+    }).fail(function(error) {
+        if (error.responseJSON) {
+            $(e.target).siblings('.alert').text(error.responseJSON.error.message).fadeIn();
+        }
+    });
+}
