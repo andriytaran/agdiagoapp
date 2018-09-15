@@ -3245,7 +3245,7 @@ a.thumbnail.active {
 }
 @media (max-width: 400px) {
   .navbar-default .navbar-brand {
-    background: none !important;
+    /*background: none !important;*/
     padding-left: 0;
   }
 }
@@ -5254,6 +5254,7 @@ a.feature-icon:hover {
   padding-top: 70px;
   margin-bottom: 20px;
   text-align: center;
+  line-height: 1.25em;
 }
 .title-logo span {
   color: #0099da;

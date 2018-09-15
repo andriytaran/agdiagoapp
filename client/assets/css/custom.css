@@ -1,0 +1,172 @@
+/* Top menu */
+.top-nav {
+  padding: 10px 0 5px;
+}
+
+.top-nav-social {
+  border: solid 1px #e3e6e8;
+}
+
+.top-nav-social a {
+  font-size: 2em;
+}
+
+.top-nav .dropdown {
+  border: solid 1px #e3e6e8;
+}
+
+.top-nav .dropdown a i {
+  font-size: 1.8em;
+}
+
+.coaches .dropdown-toggle.button-raised {
+  margin: 5px 0 !important;
+  padding-top: 8px !important;
+}
+
+.coaches .dropdown-toggle.button-raised::after {
+  top: 13px;
+}
+
+nav .open>a.login {
+  background-color: #0099da !important;
+}
+
+.navbar-default .navbar-collapse {
+  float: right;
+}
+
+#header-full .lead {
+  font-size: 1.8em;
+  padding-top: 30px;
+}
+
+.header-full-title.head-title {
+  float: none;
+}
+
+.header-full-title h1 {
+  margin-top: 30px;
+}
+
+.navbar-header {
+  background-color: #fafafa;
+}
+
+.header-logo-img {
+  float: left;
+}
+
+.header-logo-img img {
+  height: 60px;
+}
+
+#header-full {
+  background-image: url(../img/3386024-empty-stadium-seating.jpg);
+  height: 95vh;
+}
+
+.wrap-primary {
+  height: 95vh;
+}
+
+.wrap-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-default .navbar-brand {
+  background-image: url(../img/logo.png);
+}
+
+.body-logo {
+  float: none;
+  margin: auto;
+  padding: 30px 5px;
+}
+
+.branding-body .branding-description {
+  margin-bottom: 30%;
+}
+
+.branding-body .branding-button {
+  display: flex;
+  justify-content: center;
+}
+
+.branding-body .button-brand {
+  background-color: #0099da;
+  color: #fff;
+  margin: 10px;
+}
+
+.branding-body p {
+  font-size: 1.2em;
+}
+
+.sidebar .dashboard {
+  position: relative;
+  padding-bottom: 51.25%;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sidebar .team-rightside {
+  position: relative;
+  padding-bottom: 44.25%;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sidebar .dashboard img, .sidebar .team-rightside img {
+  width: 100%;
+}
+
+.panel .panel-heading a {
+  font-size: 1.2em;
+}
+
+.contact, .team-body {
+  font-size: 16px;
+}
+
+.team-body .panel-heading {
+  font-size: 1.6em;
+}
+
+section .faq-description {
+  font-size: 1.4em;
+}
+
+@media (min-height: 990px) {
+  .wrap-primary {
+    padding: 0 0 40px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-default .navbar-brand {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-header-full.navbar-dark {
+    border-top: solid 1px #fafafa;
+  }
+
+  #header-full {
+    height: 95vh;
+  }
+
+  .navbar-default .navbar-collapse {
+    float: none;
+  }
+
+  .right-line::after {
+    display: none;
+  }
+}
