@@ -8,6 +8,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const path = require('path');
 const helmet = require('helmet');
+var routes = require('./routes');
 
 const cors = require('cors');
 
@@ -57,6 +58,7 @@ app.middleware('session', session({
   cookie: {maxAge},
 }));
 
+app.use('/', routes);
 
 app.start = () => {
   // start the web server
@@ -76,7 +78,8 @@ app.start = () => {
 boot(app, __dirname, (err) => {
   if (err) throw err;
 
-  // start the server if `$ node server.js`
+// start the server if `$ node server.js`
   if (require.main === module)
     app.start();
-});
+})
+;
